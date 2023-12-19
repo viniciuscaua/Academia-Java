@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.registroAlunoController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #201F1B;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="152.0" layoutY="35.0" text="REGISTRANDO NOVO ALUNO" textFill="#ff5e1e">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="95.0" text="Nome:" textFill="#ff5e1e" />
+            <Label layoutX="191.0" layoutY="156.0" text="Email:" textFill="#ff5e1e" />
+            <Label layoutX="190.0" layoutY="213.0" text="Senha:" textFill="#ff5e1e" />
+            <Label layoutX="192.0" layoutY="273.0" text="Repita sua senha:" textFill="#ff5e1e" />
+            <TextField fx:id="textFiieldNome" layoutX="191.0" layoutY="120.0" prefHeight="25.0" prefWidth="258.0" />
+            <TextField fx:id="textFieldEmail" layoutX="192.0" layoutY="181.0" prefHeight="25.0" prefWidth="258.0" />
+            <PasswordField fx:id="textFieldSenha" layoutX="191.0" layoutY="237.0" prefHeight="25.0" prefWidth="258.0" />
+            <PasswordField fx:id="textFieldRepSenha" layoutX="189.0" layoutY="298.0" prefHeight="25.0" prefWidth="258.0" />
+            <Button fx:id="btnRegisterNow" layoutX="243.0" layoutY="335.0" mnemonicParsing="false" onAction="#registerNow" prefHeight="44.0" prefWidth="151.0" style="-fx-background-color: #ff5e1e;" text="REGISTRAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnVoltar" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#voltarNow" prefHeight="44.0" prefWidth="83.0" style="-fx-background-color: #ff5e1e;" text="VOLTAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.InterfaceInstrutor">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #201F1B;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="labelNome" layoutX="227.0" layoutY="90.0" prefHeight="54.0" prefWidth="186.0" text="Seja bem vindo!" textFill="#ff5e1e" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAcesso" layoutX="102.0" layoutY="224.0" mnemonicParsing="false" onAction="#acessoDeAlunos" prefHeight="54.0" prefWidth="193.0" style="-fx-background-color: #ff5e1e;" text="Acessar Alunos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInformacoes" layoutX="348.0" layoutY="224.0" mnemonicParsing="false" onAction="#informacoesInstrutor" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: #ff5e1e;" text="Informações Pessoais" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDeslogar" layoutX="285.0" layoutY="325.0" mnemonicParsing="false" onAction="#deslogarConta" prefHeight="41.0" prefWidth="70.0" style="-fx-background-color: #ff5e1e;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

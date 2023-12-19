@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.registrarInstrutorController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #201F1B;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btnRegistrar" layoutX="474.0" layoutY="330.0" mnemonicParsing="false" onAction="#registrarNow" prefHeight="56.0" prefWidth="159.0" style="-fx-background-color: #ff5e1e;" text="REGISTRAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="167.0" layoutY="14.0" text="REGISTRANDO NOVO INSTRUTOR" textFill="#ff5e1e">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="53.0" text="Nome:" textFill="#ff5e1e" />
+            <Label layoutX="191.0" layoutY="112.0" text="Email:" textFill="#ff5e1e" />
+            <Label layoutX="190.0" layoutY="173.0" text="Senha:" textFill="#ff5e1e" />
+            <Label layoutX="191.0" layoutY="239.0" text="Repetir senha:" textFill="#ff5e1e" />
+            <Label layoutX="268.0" layoutY="304.0" text="TOKEN DE ACESSO:" textFill="#ff5e1e" />
+            <TextField fx:id="textFieldNome" layoutX="191.0" layoutY="77.0" prefHeight="25.0" prefWidth="260.0" />
+            <TextField fx:id="textFieldEmail" layoutX="190.0" layoutY="136.0" prefHeight="25.0" prefWidth="260.0" />
+            <PasswordField fx:id="textFieldSenha" layoutX="191.0" layoutY="200.0" prefHeight="25.0" prefWidth="260.0" />
+            <PasswordField fx:id="texxtFieldRepSenha" layoutX="192.0" layoutY="264.0" prefHeight="25.0" prefWidth="260.0" />
+            <TextField fx:id="textFieldToken" layoutX="199.0" layoutY="333.0" prefHeight="25.0" prefWidth="246.0" />
+            <Button fx:id="btnVoltar" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#voltarNow" prefHeight="44.0" prefWidth="83.0" style="-fx-background-color: #ff5e1e;" text="VOLTAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

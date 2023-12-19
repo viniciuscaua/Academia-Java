@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="552.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.AcessoDeAlunos">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="401.0" prefWidth="651.0" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox alignment="CENTER" layoutX="198.0" layoutY="14.0" prefHeight="60.0" prefWidth="640.0" style="-fx-background-color: #201F1B; -fx-border-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label text="CADASTRO DE TREINO" textFill="#ff5e1e">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                    <AnchorPane layoutY="60.0" prefHeight="265.0" prefWidth="640.0" style="-fx-background-color: #201F1B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+                        <children>
+                            <TextField fx:id="tfPesquisa" layoutX="167.0" layoutY="20.0" onKeyReleased="#filtrarRegistros" prefHeight="26.0" prefWidth="306.0" promptText="Filtro de pesquisa..." style="-fx-background-color: #ffffff; -fx-border-color: #FF5E1E;" />
+                            <TableView fx:id="tableView" layoutX="3.0" layoutY="59.0" onKeyPressed="#moverTabela" onMouseClicked="#clicarTabela" prefHeight="134.0" prefWidth="636.0" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="58.0" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane layoutY="253.0" prefHeight="306.0" prefWidth="640.0" style="-fx-background-color: #201F1B; -fx-border-color: #000000;" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="253.0">
+                        <children>
+                    <TextField fx:id="tfId" disable="true" editable="false" layoutX="41.0" layoutY="40.0" promptText="ID" style="-fx-border-color: #000000;" />
+                    <TextField fx:id="tfNome" disable="true" editable="false" layoutX="228.0" layoutY="40.0" promptText="Nome" style="-fx-border-color: #000000;" />
+                    <TextField fx:id="tfIdade" disable="true" editable="false" layoutX="425.0" layoutY="40.0" promptText="Idade" style="-fx-border-color: #000000;" />
+                    <Label layoutX="40.0" layoutY="14.0" text="ALUNO SELECIONADO:" textFill="#ff5e1e">
+                        <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSair" layoutX="449.0" layoutY="247.0" mnemonicParsing="false" onAction="#acaoDoBotaoSair" prefHeight="41.0" prefWidth="177.0" style="-fx-background-color: #ff5e1e;" text="Sair" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+
+                     </font></Button>
+                  <Button fx:id="btnAtualizarTreino" layoutX="449.0" layoutY="196.0" mnemonicParsing="false" onAction="#atualizaTreino" prefHeight="41.0" prefWidth="177.0" style="-fx-background-color: #ff5e1e;" text="Atualizar Treino" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnEnviarTreino" layoutX="449.0" layoutY="147.0" mnemonicParsing="false" onAction="#enviarTreino" prefHeight="41.0" prefWidth="177.0" style="-fx-background-color: #ff5e1e;" text="Enviar Treino" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+</Button>
+                  <TextField fx:id="tfDataInicio" layoutX="33.0" layoutY="113.0" promptText="DD/YY/AAAA" />
+                  <TextField fx:id="tfDataFinal" layoutX="209.0" layoutY="113.0" promptText="DD/YY/AAAA" />
+                  <Label layoutX="33.0" layoutY="86.0" text="Data de Ínicio" textFill="#ff5e1e" />
+                  <Label layoutX="209.0" layoutY="86.0" text="Data Final" textFill="#ff5e1e" />
+                  <TextField fx:id="tfDescricao" alignment="TOP_LEFT" layoutX="33.0" layoutY="159.0" prefHeight="128.0" prefWidth="400.0" promptText="Elanore a descrição do treino aqui..." style="-fx-background-color: white; -fx-border-color: #ff5e1e;" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
