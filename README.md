@@ -1,18 +1,38 @@
-## Getting Started
+# Academia Java - Sistema de Gestão de Academia
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Introdução
 
-## Folder Structure
+Bem-vindo ao *Academia Java*, um projeto completo de gestão de academia desenvolvido em Java. Este trabalho representa o resultado de uma colaboração entre eu, Vinicius Cauã, e José Victor, como parte da avaliação final de Programação Orientada a Objetos na Universidade Federal do Rio Grande do Norte.
 
-The workspace contains two folders by default, where:
+## Estrutura do Projeto
+O projeto segue uma estrutura organizada em pastas:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* `src`: Contém o código-fonte da aplicação.
+* `lib`: Destinado às bibliotecas e dependências externas.
+* `bin`: Armazena os arquivos compilados gerados durante a execução.
+Você pode personalizar a estrutura da pasta editando as configurações no arquivo `.vscode/settings.json`.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Dependências e Gerenciamento
+O VS Code oferece a visualização `JAVA PROJECTS` para facilitar o gerenciamento de dependências.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Funcionalidades do Academia Java
+O *Academia Java* é uma aplicação completa que abrange diversas funcionalidades essenciais para a gestão eficiente de uma academia. Algumas características incluem:
 
-## Dependency Management
+1. *Cadastro de Clientes*: Registre informações detalhadas sobre os membros da academia.
+2. *Controle de Treinos*: Acompanhe e registre os treinos realizados pelos clientes.
+3. *Gestão de Pagamentos*: Gerencie os pagamentos dos clientes, com informações detalhadas sobre mensalidades.
+4. *Relatórios e Estatísticas*: Gere relatórios sobre o desempenho dos clientes, frequência na academia e outras estatísticas relevantes.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Instruções de Execução
+
+1. Abra o projeto no VS Code.
+2. Certifique-se de que as dependências estejam configuradas corretamente.
+3. Execute a aplicação e comece a explorar as funcionalidades do Academia Java.
+
+Sinta-se à vontade para entrar em contato caso tenha alguma dúvida ou sugestão. 
+Esperamos que desfrute do *Academia Java* e que ele atenda às suas expectativas para um software eficiente de academia em Java com base nisso C= !
+
+### Equipe de Desenvolvimento:
+
+#### Vinicius Cauã 
+#### Victor Gomes
